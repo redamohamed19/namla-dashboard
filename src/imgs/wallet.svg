@@ -5,19 +5,19 @@
 <path d="M10.1982 6.51855H10.8115" stroke="url(#paint3_linear_1_50)" stroke-linecap="round" stroke-linejoin="round"/>
 <defs>
 <linearGradient id="paint0_linear_1_50" x1="9.09465" y1="-0.737487" x2="9.56192" y2="18.825" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FD749B"/>
+<stop stop-color="#4EDBE5"/>
 <stop offset="1" stop-color="#281AC8"/>
 </linearGradient>
 <linearGradient id="paint1_linear_1_50" x1="4.61641" y1="-0.737487" x2="10.7406" y2="16.6833" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FD749B"/>
+<stop stop-color="#4EDBE5"/>
 <stop offset="1" stop-color="#281AC8"/>
 </linearGradient>
 <linearGradient id="paint2_linear_1_50" x1="12.743" y1="4.10053" x2="12.8389" y2="10.6237" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FD749B"/>
+<stop stop-color="#4EDBE5"/>
 <stop offset="1" stop-color="#281AC8"/>
 </linearGradient>
 <linearGradient id="paint3_linear_1_50" x1="10.5355" y1="6.36115" x2="10.6274" y2="8.12965" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FD749B"/>
+<stop stop-color="#4EDBE5"/>
 <stop offset="1" stop-color="#281AC8"/>
 </linearGradient>
 </defs>
