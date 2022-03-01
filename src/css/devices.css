@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .Conversion_Rate_to_Naira {
   width: 94%;
   margin: 0 auto;
@@ -35,6 +36,9 @@
   margin: 30px;
   align-self: center;
 }
+.container_table_conversion button:focus {
+  outline: none;
+}
 
 .table_conversion {
   width: 97%;
@@ -42,28 +46,45 @@
 }
 #available {
   color: white;
-  font-weight: bold;
+
   background-color: #5df888;
   border-radius: 18px;
-  font-size: 20px;
+
   text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
 }
 #offline {
   color: white;
-  font-weight: bold;
-  background-color: #f85d5d;
+
+  background-color: #e73636;
   border-radius: 18px;
-  font-size: 20px;
+
   text-align: center;
-  height: 20px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
 }
 #busy {
   color: white;
-  font-weight: bold;
-  background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
+
+  background: linear-gradient(178.18deg, #ffd57b -13.56%, #d0ff01 158.3%);
   border-radius: 18px;
-  font-size: 20px;
+
   text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
 }
 .table_conversion thead tr th,
 .table_conversion tbody tr td {
@@ -76,7 +97,7 @@
 .table_conversion tbody tr {
 }
 .table_conversion tr th {
-  background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
+  background: linear-gradient(178.18deg, #873392 -13.56%, #281ac8 158.3%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;

@@ -1,7 +1,30 @@
 import threebuttons from '../imgs/3buttons.svg';
-import cursor from '../imgs/cursor.svg';
+import { useState } from 'react';
+
 import React from 'react';
-const table_devices = () => {
+const Table_devices = () => {
+  const [Showmore, SetShowMore] = useState(false);
+
+  const showmorebutton = () => {
+    let list: any = document.querySelectorAll('#tr');
+    let text: any = document.querySelector(
+      '.container_table_conversion button '
+    );
+    if (Showmore) {
+      for (let i = 4; i < list.length; i++) {
+        list[i].style.display = 'table-row';
+        text.innerText = 'View Less';
+        SetShowMore(false);
+      }
+    } else {
+      for (let i = 4; i < list.length; i++) {
+        list[i].style.display = 'none';
+        SetShowMore(true);
+        text.innerText = 'View More';
+      }
+    }
+  };
+
   return (
     <div className="Conversion_Rate_to_Naira">
       <div className="Conversion_Rate_to_Naira_intro">
@@ -27,7 +50,7 @@ const table_devices = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr id="tr">
               <td>f1-micro</td>
               <td>shared</td>
               <td>0.6 Gib</td>
@@ -39,7 +62,7 @@ const table_devices = () => {
               <td>$0.0076 hourly</td>
               <td id="available">Available</td>
             </tr>
-            <tr>
+            <tr id="tr">
               <td>e2-micro</td>
               <td>0.25 vCPUs</td>
               <td>1 Gib</td>
@@ -51,7 +74,7 @@ const table_devices = () => {
               <td>$0.01988 hourly</td>
               <td id="available">Available</td>
             </tr>
-            <tr>
+            <tr id="tr">
               <td>e2-small</td>
               <td>0.5 vCPUs</td>
               <td>2 Gib</td>
@@ -63,7 +86,7 @@ const table_devices = () => {
               <td>$0.03975 hourly</td>
               <td id="offline">Offline</td>
             </tr>
-            <tr>
+            <tr id="tr">
               <td>g1-small</td>
               <td>shared</td>
               <td>1.7 Gib</td>
@@ -75,7 +98,7 @@ const table_devices = () => {
               <td>$0.027 hourly</td>
               <td id="busy">Busy</td>
             </tr>
-            <tr>
+            <tr id="tr">
               <td>e2-medium</td>
               <td>1 vCPUs</td>
               <td>4 Gib</td>
@@ -87,7 +110,7 @@ const table_devices = () => {
               <td>$0.07951 hourly</td>
               <td id="offline">Offline</td>
             </tr>
-            <tr>
+            <tr id="tr">
               <td>t2d-standard</td>
               <td>1 vCPUs</td>
               <td>4 Gib</td>
@@ -99,7 +122,7 @@ const table_devices = () => {
               <td>$0.08825 hourly</td>
               <td id="busy">Busy</td>
             </tr>
-            <tr>
+            <tr id="tr">
               <td>n1-standar-</td>
               <td>1 vCPUs</td>
               <td>3.75 Gib</td>
@@ -111,7 +134,7 @@ const table_devices = () => {
               <td>$0.0935 hourly</td>
               <td id="busy">Busy</td>
             </tr>
-            <tr>
+            <tr id="tr">
               <td>highcpu-2</td>
               <td>2 vCPUs</td>
               <td>2 Gib</td>
@@ -125,9 +148,9 @@ const table_devices = () => {
             </tr>
           </tbody>
         </table>
-        <button>Show more </button>
+        <button onClick={showmorebutton}>View Less </button>
       </div>
     </div>
   );
 };
-export default table_devices;
+export default Table_devices;

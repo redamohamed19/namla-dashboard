@@ -1,6 +1,3 @@
-import base from '../imgs/Base.png';
-import backchart from '../imgs/chart_background.png';
-import threebuttons from '../imgs/3buttons.svg';
 import { RadialBarChart, RadialBar } from 'recharts';
 import React from 'react';
 

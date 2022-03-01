@@ -1,6 +1,6 @@
 import React from 'react';
 // global vars
-let keyPressAudio, backgroundAudio;
+
 let terminal: any;
 let writeSpeed: any;
 
