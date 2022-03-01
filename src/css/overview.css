@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+.overview {
+}
+.title_overview {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  font-size: 14px;
+  color: #858585;
+  font-weight: bold;
+}
+.soustitle_overview {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  font-size: 18px;
+  color: #858585;
+  font-weight: bold;
+}
+.soustitle_overview img {
+  height: 30px;
+  width: 30px;
+}
+.overview_chart {
+  display: flex;
+  justify-content: space-around;
+}
+.chart_container {
+  position: relative;
+  display: flex;
+  width: 28%;
+  justify-content: flex-start;
+  align-items: center;
+  background: #ffffff;
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+}
+.chart {
+  position: relative;
+}
+.chart img {
+  position: absolute;
+  width: 100px;
+  height: 170px;
+  left: 9px;
+  top: 0px;
+  transform: rotate(180deg);
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.chart p {
+  position: absolute;
+  left: 80px;
+  top: 80px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 49px;
+
+  background: -webkit-linear-gradient(#fc58b3 11.61%, #feae68 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#chart_plus {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+
+  border: none;
+  background: none;
+}
+#chart_plus img {
+  height: 27px;
+  width: 16px;
+}
+.tt_transactions {
+  width: 150px;
+  align-items: baseline;
+}
+.tt_transactions h4 {
+  font-size: 18px;
+  color: #858585;
+  line-height: 24px;
+  font-weight: bold;
+}
+.base_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+.base_info p {
+  color: #1cd1a1;
+  font-size: 16px;
+  font-weight: bold;
+}
+/*     Conversion Rate to Naira                                        ********************************************/
+.Conversion_Rate_to_Naira {
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: #ffffff;
+  border: 2px solid #f0f0f0;
+  border-radius: 15px;
+}
+.Conversion_Rate_to_Naira_intro {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  font-size: 18px;
+  color: #858585;
+  font-weight: bold;
+}
+#table_plus {
+  border: none;
+  background: none;
+}
+.container_table_conversion {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container_table_conversion button {
+  background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
+  height: 55px;
+  width: 55px;
+  border-radius: 100px;
+  border: none;
+}
+.container_table_conversion button img {
+  height: 25px;
+  width: 25px;
+}
+.table_conversion {
+  width: 80%;
+}
+
+.table_conversion tr th,
+.table_conversion tr td {
+  padding: 20px 20px 20px 20px;
+  width: 300px;
+  text-align: left;
+  color: rgba(133, 133, 133, 1);
+}
+.table_conversion tr th {
+  background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/*     wallet_overview                                        ********************************************/
+.wallet_overview {
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-image: url(../imgs/background_wallet.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #f0f0f0;
+  border-radius: 15px;
+}
+.wallet_overview_intro {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+}
+.wallet_overview_intro h4 {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+.wallet_overview_intro button {
+  font-size: 14px;
+  border-radius: 28px;
+  padding: 15px 30px 15px 30px;
+
+  color: #b8264f;
+  font-weight: bold;
+  background: white;
+  border: none;
+}
+.wallet_overview_content {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 25% 30% 30%;
+  height: 250px;
+}
+.trophee {
+  justify-self: center;
+  align-self: center;
+}
+.Total_Earnings button {
+  font-size: 14px;
+  border-radius: 28px;
+  padding: 05px 30px 05px 30px;
+
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(144.12deg, #fc58b3 11.61%, #feae68 100%);
+
+  border: none;
+}
+.Total_Earnings h1 {
+  font-family: 'Fjalla One', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 54px;
+  color: white;
+  padding: 20px;
+}
+.Total_Earnings p {
+  color: white;
+  width: 70%;
+}
+
+.wallet_Balance button {
+  font-size: 14px;
+  border-radius: 28px;
+  padding: 05px 30px 05px 30px;
+
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(144.12deg, #fc58b3 11.61%, #feae68 100%);
+
+  border: none;
+}
+.wallet_Balance h1 {
+  font-family: 'Fjalla One', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 54px;
+  color: white;
+  padding: 20px;
+}
+.wallet_Balance p {
+  color: white;
+  width: 70%;
+}
+/*     Overview Statics                                        ********************************************/
+.overview_statics {
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: #ffffff;
+  border: 2px solid #f0f0f0;
+  border-radius: 15px;
+}
+.overview_statics_intro {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  font-size: 18px;
+  color: #858585;
+  font-weight: bold;
+}
+.overview_statics_intro h4 {
+  letter-spacing: 2px;
+}
