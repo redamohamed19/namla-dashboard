@@ -1,0 +1,83 @@
+.Conversion_Rate_to_Naira {
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: #ffffff;
+  border: 2px solid #f0f0f0;
+  border-radius: 15px;
+}
+.Conversion_Rate_to_Naira_intro {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  font-size: 18px;
+  color: #858585;
+  font-weight: bold;
+}
+#table_plus {
+  border: none;
+  background: none;
+}
+.container_table_conversion {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-content: center;
+}
+.container_table_conversion button {
+  background: linear-gradient(178.18deg, #4edbe5 -13.56%, #281ac8 158.3%);
+  padding: 7px 20px;
+  border-radius: 18px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px;
+  align-self: center;
+}
+
+.table_conversion {
+  width: 97%;
+  border-spacing: 0 30px;
+}
+#available {
+  color: white;
+  font-weight: bold;
+  background-color: #5df888;
+  border-radius: 18px;
+  font-size: 20px;
+  text-align: center;
+}
+#offline {
+  color: white;
+  font-weight: bold;
+  background-color: #f85d5d;
+  border-radius: 18px;
+  font-size: 20px;
+  text-align: center;
+  height: 20px;
+}
+#busy {
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
+  border-radius: 18px;
+  font-size: 20px;
+  text-align: center;
+}
+.table_conversion thead tr th,
+.table_conversion tbody tr td {
+  padding: 0px 20px 0px 20px;
+
+  text-align: left;
+  color: #010108;
+}
+.table_conversion thead tr,
+.table_conversion tbody tr {
+}
+.table_conversion tr th {
+  background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}

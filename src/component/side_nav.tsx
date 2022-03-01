@@ -10,7 +10,7 @@ const side_nav = () => {
       <ul>
         <li>
           <img src={overview} alt="overview" />
-          Overview
+          Clusters
         </li>
         <li>
           <img src={trade} alt="trade" />

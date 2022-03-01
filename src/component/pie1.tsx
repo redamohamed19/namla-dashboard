@@ -4,7 +4,7 @@ import threebuttons from '../imgs/3buttons.svg';
 import { RadialBarChart, RadialBar } from 'recharts';
 import React from 'react';
 
-const pie1 = props => {
+const pie1 = (props: any) => {
   return (
     <div className="chart">
       <div className="chart_container">
@@ -17,7 +17,7 @@ const pie1 = props => {
           startAngle={0}
           endAngle={360}
         >
-          <RadialBar minAngle={0} background dataKey="uv" />
+          <RadialBar background dataKey="uv" />
         </RadialBarChart>
         <h1>{props.percente}</h1>
       </div>

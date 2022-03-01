@@ -30,7 +30,7 @@ nav {
   align-items: center;
   gap: 82px;
 
-  grid-column: 5/8;
+  grid-column: 5/7;
   justify-self: center;
 }
 .navbar-nav li {
@@ -40,8 +40,8 @@ nav {
 
 .notifications {
   position: relative;
-  grid-column: 8/9;
-  justify-self: center;
+  grid-column: 7/8;
+  justify-self: end;
 }
 .notifications img {
   width: 20px;
@@ -56,6 +56,19 @@ nav {
   padding: 4px;
   color: white;
   background: linear-gradient(178.18deg, #4edbe5 -13.56%, #281ac8 158.3%);
+  border-radius: 90px;
+}
+.avatar {
+  width: max-content;
+  grid-column: 8/9;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.avatar img {
+  height: 50px;
+  width: 50px;
   border-radius: 90px;
 }
 .content {
@@ -84,6 +97,8 @@ nav {
 }
 .side_nav ul li:nth-child(1) {
   margin-top: 50px;
+}
+.side_nav ul li:nth-child(3) {
   color: white;
   border-radius: 0px 90px 90px 0px;
   background: linear-gradient(178.18deg, #4edbe5 -13.56%, #281ac8 158.3%);
