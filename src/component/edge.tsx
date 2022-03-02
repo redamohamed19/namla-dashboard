@@ -9,6 +9,7 @@ import card from '../imgs/card.png';
 import CandlestikGlobal from './candlestik_global';
 
 const Edge = () => {
+  //edge component implementation
   return (
     <div className="edge">
       <div className="edge_left">

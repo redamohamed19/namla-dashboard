@@ -1,15 +1,23 @@
+.devices h4 {
+  font-weight: bold;
+  list-style-type: none;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bolder;
+  color: #4b4b4b;
+}
 .Conversion_Rate_to_Naira {
   width: 94%;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 0px;
   background-color: #ffffff;
   border: 2px solid #f0f0f0;
   border-radius: 15px;
 }
 .Conversion_Rate_to_Naira_intro {
   display: flex;
-  justify-content: space-between;
-  padding: 50px;
+  justify-content: flex-end;
+  padding: 20px;
   font-size: 18px;
   color: #858585;
   font-weight: bold;
@@ -134,4 +142,34 @@
 
 .table_conversion tr th {
   background: #f1f1f1;
+}
+
+@media only screen and (max-width: 1600px) {
+  .table_conversion thead tr th,
+  .table_conversion tbody tr td {
+    padding: 0px 5px 0px 5px;
+    text-align: left;
+    color: #010108;
+    font-size: 12px;
+    border-bottom: #e5e7eb solid;
+  }
+  .navbar-nav {
+    padding: 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    grid-column: 4/6;
+    justify-self: center;
+  }
+  .notifications {
+    position: relative;
+    grid-column: 7/8;
+    justify-self: end;
+  }
+  .avatar {
+    position: relative;
+    grid-column: 8/9;
+    justify-self: flex-start;
+  }
 }

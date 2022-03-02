@@ -1,4 +1,3 @@
-import threebuttons from '../imgs/3buttons.svg';
 import {
   ResponsiveContainer,
   AreaChart,
@@ -10,14 +9,16 @@ import {
 } from 'recharts';
 import React from 'react';
 import { useState } from 'react';
-import getData from '../func/generatedata';
+import getData from '../func/generatedata'; //import random data object
 
 const Statics = () => {
-  const [t, SetT] = useState(getData());
+  const [t, SetT] = useState(getData()); //data variable
   setInterval(function() {
     SetT(getData());
-  }, 10000);
+  }, 10000); //get new data each 10sec
+
   return (
+    //statistic component implementaion
     <div className="overview_statics">
       <div className="overview_statics_intro">
         <h4>Statistics</h4>

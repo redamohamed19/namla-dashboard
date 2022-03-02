@@ -7,13 +7,17 @@ import { useState } from 'react';
 import wallet from '../imgs/wallet.svg';
 import trade from '../imgs/trade.svg';
 const elements = [
+  //sub section element
   { title: 'Clusters', link: '/', image: overview },
   { title: 'edge', link: '/edge', image: trade },
   { title: 'devices', link: '/devices', image: wallet }
 ];
+
 const SideNav = () => {
-  const [Active, SetActive] = useState(0);
+  //navbar component implementation
+  const [Active, SetActive] = useState(0); // apply effect on the clicked subsection
   return (
+    // llop thourght the dynamic element object
     <div className="side_nav">
       <ul>
         {elements.map((element, index) => {

@@ -4,11 +4,12 @@ import Candlestick from './candlestick';
 
 import { XAxis, YAxis, LineSeries, FlexibleWidthXYPlot } from 'react-vis';
 /**
- * Generate random random for candle stick chart
+ * Generate random random data for candle stick chart
  * @param {number} total - Total number of values.
  * @returns {Array} Array of data.
  */
 function buildRandomBinnedData(total) {
+  //lenght of object
   const result = Array(total)
     .fill(0)
     .map((x, i) => {
@@ -28,13 +29,14 @@ function buildRandomBinnedData(total) {
         yOpen: values[2],
         yClose: values[1],
         yLow: values[0],
-        color: y < 25 ? '#EF5D28' : '#12939A',
+        color: y < 25 ? '#EF5D28' : '#12939A', //push color depending on value
         opacity: y > 75 ? 0.7 : 1
       };
     });
   return result;
 }
 const Candlestik_Global = () => {
+  //Candlestik_Global component implementation
   let data = buildRandomBinnedData(30);
   return (
     <div className="candlestick-example">

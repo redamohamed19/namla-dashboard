@@ -3,21 +3,24 @@ import { useState, useRef } from 'react';
 
 import React from 'react';
 const Tabledevices = () => {
-  const [Showmore, SetShowMore] = useState(false);
-  const [plus, Setplus] = useState(false);
+  const [Showmore, SetShowMore] = useState(false); //to show more ol less data
+  const [plus, Setplus] = useState(false); //to show or not the navigation menu on the table
 
   const showless = useRef<any>();
 
   const showmorebutton = () => {
+    //function that show more or less data
     SetShowMore(!Showmore);
     console.log(showless.current.children[2]);
     if (Showmore) {
+      //show all the rows
       for (let i = 4; i < showless.current.children.length; i++) {
         {
           showless.current.children[i].style.display = 'table-row';
         }
       }
     } else {
+      //show only 4 row
       for (let i = 4; i < showless.current.children.length; i++) {
         {
           showless.current.children[i].style.display = 'none';
@@ -27,17 +30,17 @@ const Tabledevices = () => {
   };
 
   return (
+    //table function implementation
     <div className="Conversion_Rate_to_Naira">
       <div className="Conversion_Rate_to_Naira_intro">
-        <h4>List Devices</h4>
         <button
           id="table_plus"
           onClick={() => {
-            Setplus(!plus);
+            Setplus(!plus); // show more | less
           }}
         >
           <img src={threebuttons} alt="plus" />
-          {plus && (
+          {plus && ( //  show this element depend on plus variable
             <ul className="py-1">
               <li>Account settings</li>
               <li>Support</li>
@@ -181,7 +184,8 @@ const Tabledevices = () => {
           </tbody>
         </table>
         <button onClick={showmorebutton}>
-          {Showmore ? 'View Less' : 'View more'}{' '}
+          {Showmore ? 'View Less' : 'View more'}
+          {' ' /* print text depend on showmore variable*/}
         </button>
       </div>
     </div>

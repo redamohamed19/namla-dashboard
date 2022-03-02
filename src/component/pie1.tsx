@@ -2,6 +2,7 @@ import { RadialBarChart, RadialBar } from 'recharts';
 import React from 'react';
 
 const pie1 = (props: any) => {
+  // pie chart comonent implementation with dynamic data
   return (
     <div className="charter">
       <div className="chart_container">

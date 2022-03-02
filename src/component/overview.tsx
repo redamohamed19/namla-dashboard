@@ -5,6 +5,7 @@ import Statics from './statics';
 import React from 'react';
 
 const overview = () => {
+  //overview component implementation
   return (
     <section className="overview">
       <div className="soustitle_overview">
