@@ -1,6 +1,6 @@
 import './css/App.css';
 import Header from './component/header';
-import Side_nav from './component/side_nav';
+import SideNav from './component/side_nav';
 import Overview from './component/overview';
 import Devices from './component/devices';
 import Edge from './component/edge';
@@ -14,7 +14,7 @@ function App() {
       <div className="container">
         <Header />
         <div className="content">
-          <Side_nav />
+          <SideNav />
           <Switch>
             <Route exact path="/" component={Overview} />
             <Route exact path="/edge" component={Edge} />

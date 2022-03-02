@@ -34,7 +34,7 @@ function buildRandomBinnedData(total) {
     });
   return result;
 }
-const Globalcandlestick = () => {
+const Candlestik_Global = () => {
   let data = buildRandomBinnedData(30);
   return (
     <div className="candlestick-example">
@@ -65,4 +65,4 @@ const Globalcandlestick = () => {
     </div>
   );
 };
-export default Globalcandlestick;
+export default Candlestik_Global;

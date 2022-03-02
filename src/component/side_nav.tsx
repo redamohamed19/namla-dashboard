@@ -5,12 +5,7 @@ import { Link } from 'react-router-dom';
 
 import wallet from '../imgs/wallet.svg';
 import trade from '../imgs/trade.svg';
-const side_nav = () => {
-  function click123(event: any) {
-    var a = (event.target.style =
-      'color: white;border-radius: 0px 90px 90px 0px;background: linear-gradient(178.18deg, #4edbe5 -13.56%, #281ac8 158.3%);');
-    console.log(a);
-  }
+const SideNav = () => {
   return (
     <div className="side_nav">
       <ul>
@@ -37,4 +32,4 @@ const side_nav = () => {
     </div>
   );
 };
-export default side_nav;
+export default SideNav;

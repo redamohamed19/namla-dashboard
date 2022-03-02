@@ -2,7 +2,7 @@ import threebuttons from '../imgs/3buttons.svg';
 import { useState } from 'react';
 
 import React from 'react';
-const Table_devices = () => {
+const Tabledevices = () => {
   const [Showmore, SetShowMore] = useState(false);
 
   const showmorebutton = () => {
@@ -153,4 +153,4 @@ const Table_devices = () => {
     </div>
   );
 };
-export default Table_devices;
+export default Tabledevices;
