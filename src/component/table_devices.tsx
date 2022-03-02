@@ -11,20 +11,16 @@ const Tabledevices = () => {
   const showmorebutton = () => {
     //function that show more or less data
     SetShowMore(!Showmore);
-    console.log(showless.current.children[2]);
+
     if (Showmore) {
       //show all the rows
       for (let i = 4; i < showless.current.children.length; i++) {
-        {
-          showless.current.children[i].style.display = 'table-row';
-        }
+        showless.current.children[i].style.display = 'table-row';
       }
     } else {
       //show only 4 row
       for (let i = 4; i < showless.current.children.length; i++) {
-        {
-          showless.current.children[i].style.display = 'none';
-        }
+        showless.current.children[i].style.display = 'none';
       }
     }
   };

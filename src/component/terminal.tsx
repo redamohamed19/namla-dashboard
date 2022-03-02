@@ -4,9 +4,10 @@ import React, { useState, useRef, useEffect } from 'react';
 const Tterminal = () => {
   //function that keep push virtual data on terminal log
   let terminal: any;
-  const [writeSpeed, SetwriteSpeed] = useState(60);
+  const [writeSpeed] = useState(60);
   const terminalRef = useRef(null);
   let [counter, Setcounter] = useState<number>(0);
+
   useEffect(() => {
     init();
   }, []);
