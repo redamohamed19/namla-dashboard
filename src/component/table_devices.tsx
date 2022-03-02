@@ -1,26 +1,27 @@
 import threebuttons from '../imgs/3buttons.svg';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 import React from 'react';
 const Tabledevices = () => {
   const [Showmore, SetShowMore] = useState(false);
+  const [plus, Setplus] = useState(false);
+
+  const showless = useRef<any>();
 
   const showmorebutton = () => {
-    let list: any = document.querySelectorAll('#tr');
-    let text: any = document.querySelector(
-      '.container_table_conversion button '
-    );
+    SetShowMore(!Showmore);
+    console.log(showless.current.children[2]);
     if (Showmore) {
-      for (let i = 4; i < list.length; i++) {
-        list[i].style.display = 'table-row';
-        text.innerText = 'View Less';
-        SetShowMore(false);
+      for (let i = 4; i < showless.current.children.length; i++) {
+        {
+          showless.current.children[i].style.display = 'table-row';
+        }
       }
     } else {
-      for (let i = 4; i < list.length; i++) {
-        list[i].style.display = 'none';
-        SetShowMore(true);
-        text.innerText = 'View More';
+      for (let i = 4; i < showless.current.children.length; i++) {
+        {
+          showless.current.children[i].style.display = 'none';
+        }
       }
     }
   };
@@ -29,8 +30,20 @@ const Tabledevices = () => {
     <div className="Conversion_Rate_to_Naira">
       <div className="Conversion_Rate_to_Naira_intro">
         <h4>List Devices</h4>
-        <button id="table_plus">
+        <button
+          id="table_plus"
+          onClick={() => {
+            Setplus(!plus);
+          }}
+        >
           <img src={threebuttons} alt="plus" />
+          {plus && (
+            <ul className="py-1">
+              <li>Account settings</li>
+              <li>Support</li>
+              <li>License</li>
+            </ul>
+          )}
         </button>
       </div>
       <div className="container_table_conversion">
@@ -49,7 +62,7 @@ const Tabledevices = () => {
               <th title="Field #9">Availibility</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody ref={showless}>
             <tr id="tr">
               <td>f1-micro</td>
               <td>shared</td>
@@ -60,7 +73,9 @@ const Tabledevices = () => {
               <td>Not supported</td>
               <td>$0.0076 hourly</td>
               <td>$0.0076 hourly</td>
-              <td id="available">Available</td>
+              <td id="available">
+                <p>available</p>
+              </td>
             </tr>
             <tr id="tr">
               <td>e2-micro</td>
@@ -72,7 +87,10 @@ const Tabledevices = () => {
               <td>Not supported</td>
               <td>$0.00838 hourly</td>
               <td>$0.01988 hourly</td>
-              <td id="available">Available</td>
+              <td id="available">
+                {' '}
+                <p>available</p>
+              </td>
             </tr>
             <tr id="tr">
               <td>e2-small</td>
@@ -84,7 +102,10 @@ const Tabledevices = () => {
               <td>Not supported</td>
               <td>$0.01675 hourly</td>
               <td>$0.03975 hourly</td>
-              <td id="offline">Offline</td>
+              <td id="offline">
+                {' '}
+                <p>Offline</p>
+              </td>
             </tr>
             <tr id="tr">
               <td>g1-small</td>
@@ -96,7 +117,9 @@ const Tabledevices = () => {
               <td>Not supported</td>
               <td>$0.027 hourly</td>
               <td>$0.027 hourly</td>
-              <td id="busy">Busy</td>
+              <td id="busy">
+                <p>Busy</p>
+              </td>
             </tr>
             <tr id="tr">
               <td>e2-medium</td>
@@ -108,7 +131,10 @@ const Tabledevices = () => {
               <td>Not supported</td>
               <td>$0.03351 hourly</td>
               <td>$0.07951 hourly</td>
-              <td id="offline">Offline</td>
+              <td id="offline">
+                {' '}
+                <p>Offline</p>
+              </td>
             </tr>
             <tr id="tr">
               <td>t2d-standard</td>
@@ -120,7 +146,9 @@ const Tabledevices = () => {
               <td>Not supported</td>
               <td>$0.04225 hourly</td>
               <td>$0.08825 hourly</td>
-              <td id="busy">Busy</td>
+              <td id="busy">
+                <p>Busy</p>
+              </td>
             </tr>
             <tr id="tr">
               <td>n1-standar-</td>
@@ -132,7 +160,9 @@ const Tabledevices = () => {
               <td>Supported</td>
               <td>$0.0475 hourly</td>
               <td>$0.0935 hourly</td>
-              <td id="busy">Busy</td>
+              <td id="busy">
+                <p>Busy</p>
+              </td>
             </tr>
             <tr id="tr">
               <td>highcpu-2</td>
@@ -144,11 +174,15 @@ const Tabledevices = () => {
               <td>Not supported</td>
               <td>$0.04947 hourly</td>
               <td>$0.14147 hourly</td>
-              <td id="available">Available</td>
+              <td id="available">
+                <p>available</p>
+              </td>
             </tr>
           </tbody>
         </table>
-        <button onClick={showmorebutton}>View Less </button>
+        <button onClick={showmorebutton}>
+          {Showmore ? 'View Less' : 'View more'}{' '}
+        </button>
       </div>
     </div>
   );

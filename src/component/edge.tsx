@@ -68,8 +68,8 @@ const Edge = () => {
           <img src={card} alt="card" />
         </div>
         <div className="monthly_credit">
-          <p>monthly credits</p>
-          <h4>$20,000 of $100,000</h4>
+          <h4>monthly credits</h4>
+          <p>$20,000 of $100,000</p>
           <button>view details</button>
         </div>
         <h3 className="trh3">transaction</h3>

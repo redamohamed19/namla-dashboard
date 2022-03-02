@@ -1,46 +1,123 @@
-# Getting Started with Create React App
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+     <li><a href="#dashboard System components"> dashboard System components</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- ABOUT THE PROJECT -->
 
-## Available Scripts
+## About The Project
 
-In the project directory, you can run:
+This repository contains a Project for Namla Dashboard, based on React TypeScript ..
 
-### `npm start`
+### Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-
 
-### `npm test`
+- [React.js](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [rechart](https://recharts.org/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### `npm run build`
+<!-- GETTING STARTED -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+This is an example of how to list things you need to use the software and how to install them.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+\_Below is an example of how you can instruct your audience on installing and setting up your app.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/redamohamed19/namla-dashboard
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Start App
+   ```sh
+   npm start
+   ```
 
-## Learn More
+<!-- USAGE EXAMPLES -->
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+_For more information, please refer to the [Documentation](https://example.com)_
+
+### dashboard System components
+
+The dashboard application provides the administrative authority with an interface to interact with both the client a cloud service ,It consists of a static header and side\*bar and dynamic content
+**\*a.) header:**_ the header include the logo, the navigation menu to the different sections,user profile, and the alert notification.
+_**a.) sidebar:** the side bar include the three subsections (clusters, edge and devices). Whenever the user clicks on one subsection, only the components in the main middle area change and the ones corresponding to this subsection are displayed
+
+_**c.) clusters:** contain three component statistics the pie chart and console log
+_**c.) Edge:** contain ads layer and candlestick component
+\_**c.) Devices:** contain table component that show all the devices
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+- [x] Initialize project using Create React App
+- [x] add header
+- [x] add statics component
+- [x] terminal component
+- [x] summary component
+- [x] add devices component
+- [x] implement generate random function
+- [x] edge subsec component
+
+See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- CONTACT -->
+
+## Contact
+
+Your Name - [@Reda](https://twitter.com/Reda93526483) -reda1998.rs@gmail.com
+
+Project Link: [https://github.com/your_username/repo_name](https://github.com/redamohamed19/)

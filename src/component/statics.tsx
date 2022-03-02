@@ -20,10 +20,7 @@ const Statics = () => {
   return (
     <div className="overview_statics">
       <div className="overview_statics_intro">
-        <h4>Statics</h4>
-        <button id="table_plus">
-          <img src={threebuttons} alt="plus" />
-        </button>
+        <h4>Statistics</h4>
       </div>
       <div style={{ width: '90%', height: 300 }}>
         <ResponsiveContainer>

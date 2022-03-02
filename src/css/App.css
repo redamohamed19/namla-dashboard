@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Poppins;
 }
 nav {
   display: grid;
@@ -37,8 +36,8 @@ nav {
   list-style-type: none;
   font-size: 20px;
   font-weight: bolder;
-  color: #4b4b4b;
-  font-family: ui-monospace;
+  color: #7f7f7f;
+
   letter-spacing: 2px;
 }
 
@@ -77,7 +76,6 @@ nav {
   font-size: 20px;
   font-weight: bolder;
   color: #4b4b4b;
-  font-family: ui-monospace;
 }
 .avatar img {
   height: 50px;
@@ -136,7 +134,6 @@ nav {
   width: 95%;
 }
 .side_nav ul li a {
-  font-family: Poppins;
   color: rgba(133, 133, 133, 1);
   font-size: 18px;
   display: flex;
@@ -149,10 +146,13 @@ nav {
 .side_nav ul li:nth-child(1) a {
   margin-top: 50px;
 }
-.side_nav ul li:nth-child(1) a {
+.active a {
   color: white;
   border-radius: 0px 90px 90px 0px;
   background: linear-gradient(178.18deg, #4edbe5 -13.56%, #281ac8 158.3%);
+}
+.active span {
+  color: white;
 }
 .side_nav ul li img {
   height: 25px;
