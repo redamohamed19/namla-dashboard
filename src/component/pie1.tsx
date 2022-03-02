@@ -3,7 +3,7 @@ import React from 'react';
 
 const pie1 = (props: any) => {
   return (
-    <div className="chart">
+    <div className="charter">
       <div className="chart_container">
         <RadialBarChart
           width={300}

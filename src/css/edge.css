@@ -1,0 +1,219 @@
+.edge {
+  display: flex;
+  justify-content: space-around;
+  background-color: #2f2f3705;
+}
+.edge_left {
+  width: 70%;
+}
+.edge_right {
+  width: 25%;
+}
+.layer_ads {
+  width: 98%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(89.13deg, #4edbe5 3.7%, #281ac8 95.7%);
+
+  border-radius: 20px;
+  height: 400px;
+  margin: 0 auto;
+}
+.layer_info h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 45px;
+  text-transform: capitalize;
+  width: 90%;
+
+  color: #ffffff;
+}
+.layer_info button {
+  background: linear-gradient(101.43deg, #06aadd -2.83%, #2f55b7 73.19%);
+  border-radius: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 15px 20px 15px 20px;
+  margin-top: 20px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+.market_overflow {
+  margin-top: 50px;
+}
+.market_overflow_intro {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.market_overflow_intro h3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  color: #000000;
+}
+.market_overflow_intro div {
+  display: flex;
+  align-items: center;
+}
+.market_overflow_intro div p {
+  font-family: Roboto;
+  font-style: bold;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: capitalize;
+
+  color: #5a5881;
+}
+.candlestick-example {
+  width: 100%;
+}
+.chart {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.dashed-example-line {
+  stroke-dasharray: 2, 2;
+}
+.mycard img {
+  margin-top: 20px;
+}
+.mycard h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  color: #000000;
+}
+.monthly_credit p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  color: #000000;
+}
+.monthly_credit {
+  margin-top: 40px;
+}
+.monthly_credit h4 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  color: #000000;
+}
+.monthly_credit button {
+  background: #285e9e;
+  border-radius: 10px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+  width: 80%;
+  padding: 05px 0 5px 0;
+  margin: 0 auto;
+  align-self: center;
+  margin-top: 20px;
+}
+.trh3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+  margin-left: 10px;
+  text-transform: capitalize;
+
+  color: #000000;
+  margin-top: 20px;
+}
+.transact {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.transact div {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.transact div h5 {
+  margin-left: 10px;
+}
+.transact div p {
+  color: red;
+  justify-self: flex-end;
+  position: absolute;
+  right: 80px;
+}
+.prushared {
+  display: flex;
+  justify-content: space-around;
+}
+.prusharedh3 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  color: #000000;
+  padding: 20px;
+}
+.machine {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 18px;
+  width: 25%;
+  background: white;
+}
+.machine img {
+  height: 100px;
+  width: 100px;
+}

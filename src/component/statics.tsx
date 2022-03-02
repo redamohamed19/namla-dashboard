@@ -9,7 +9,7 @@ import {
 } from 'recharts';
 import React from 'react';
 import { useState } from 'react';
-import getData from './generatedata';
+import getData from '../func/generatedata';
 
 const Statics = () => {
   const [t, SetT] = useState(getData());

@@ -63,6 +63,7 @@ nav {
   border-radius: 90px;
 }
 .avatar {
+  position: relative;
   width: max-content;
   grid-column: 8/9;
   justify-self: center;
@@ -81,7 +82,44 @@ nav {
 .avatar img {
   height: 50px;
   width: 50px;
-  border-radius: 90px;
+  border-radius: 20px;
+}
+.profile {
+  position: absolute;
+  top: 120%;
+  left: -100px;
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  height: 250px;
+  z-index: 9999;
+}
+.profile_header {
+  display: flex;
+}
+.profile_header img {
+  height: 70px;
+  width: 70px;
+}
+.profile button {
+  width: 90%;
+  border-radius: 18px;
+  border: 1px #281ac8 solid;
+  background: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.profile h4 {
+  margin-top: 20px;
+  margin-left: 10px;
+  color: #2e2d2d;
+}
+.profile p {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #6e6e6e;
+  font-size: 16px;
 }
 .content {
   display: grid;

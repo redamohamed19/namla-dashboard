@@ -106,7 +106,7 @@
 }
 
 /*     chart terminal                                        ********************************************/
-.chart {
+.charter {
   margin-bottom: 130px;
 }
 .chart_container {
@@ -130,6 +130,6 @@
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-.chart h5 {
+.charter h5 {
   font-size: 1.25rem;
 }

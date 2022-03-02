@@ -21,7 +21,7 @@ const side_nav = () => {
           </Link>
         </li>
         <li>
-          <Link to="/">
+          <Link to="/edge">
             <img src={trade} alt="trade" />
             Trade
           </Link>

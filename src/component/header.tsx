@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../imgs/logo.png';
-import avatar from '../imgs/avatar_pic.jpg';
+import avatar from '../imgs/avatar1.png';
 import { Link } from 'react-router-dom';
 
 import ring from '../imgs/ring.png';
