@@ -14,11 +14,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(89.13deg, #4edbe5 3.7%, #281ac8 95.7%);
+  background: linear-gradient(89.13deg, #281ac8 3.7%, #4edbe5 95.7%);
 
   border-radius: 20px;
   height: 400px;
   margin: 0 auto;
+}
+.layer_info {
+  width: 40%;
 }
 .layer_info h1 {
   font-family: Poppins;
@@ -27,22 +30,27 @@
   font-size: 35px;
   line-height: 45px;
   text-transform: capitalize;
-  width: 90%;
+  width: 100%;
 
   color: #ffffff;
 }
 .layer_info button {
-  background: linear-gradient(101.43deg, #06aadd -2.83%, #2f55b7 73.19%);
+  background: white;
   border-radius: 20px;
+  padding: 15px 20px 15px 20px;
+  margin-top: 20px;
+}
+.layer_info button p {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
-  padding: 15px 20px 15px 20px;
-  margin-top: 20px;
-  /* identical to box height */
 
+  /* identical to box height */
+  background: linear-gradient(101.43deg, #06aadd -2.83%, #2f55b7 73.19%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-transform: capitalize;
 
   color: #ffffff;
@@ -94,6 +102,7 @@
 }
 .mycard img {
   margin-top: 20px;
+  width: 98%;
 }
 .mycard h2 {
   font-family: Poppins;
@@ -168,23 +177,21 @@
 }
 .transact {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  width: 80%;
-  margin: 0 auto;
+  width: 90%;
   margin-top: 30px;
 }
 .transact div {
   padding: 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .transact div h5 {
-  margin-left: 10px;
+  text-align: left;
 }
 .transact div p {
   color: red;
   justify-self: flex-end;
-  position: absolute;
-  right: 80px;
 }
 .prushared {
   display: flex;
@@ -205,9 +212,10 @@
 }
 .machine {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
+  gap: 20px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   border-radius: 18px;
   width: 25%;
@@ -215,5 +223,5 @@
 }
 .machine img {
   height: 100px;
-  width: 100px;
+  max-width: 100px;
 }

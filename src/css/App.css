@@ -141,7 +141,7 @@ nav {
   font-size: 18px;
   display: flex;
   gap: 10px;
-  padding: 18px 10px 18px 100px;
+  padding: 18px 10px 18px 80px;
   list-style-type: none;
   margin-bottom: 20px;
   text-decoration: none;
@@ -169,5 +169,5 @@ nav {
   color: white;
   background: linear-gradient(178.18deg, #4edbe5 -13.56%, #281ac8 158.3%);
   border-radius: 20px;
-  margin-left: 100px;
+  margin-left: 30%;
 }

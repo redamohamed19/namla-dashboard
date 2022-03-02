@@ -26,7 +26,7 @@ const header = () => {
       </div>
       <div className="avatar">
         <img src={avatar} alt="avatar" />
-        <p>Ramon Ridwan</p>
+        <p>Ramon </p>
       </div>
     </nav>
   );

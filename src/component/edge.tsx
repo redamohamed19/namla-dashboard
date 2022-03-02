@@ -15,7 +15,9 @@ const Edge = () => {
         <div className="layer_ads">
           <div className="layer_info">
             <h1>Make your Cloud Operation easier</h1>
-            <button>see transaction</button>
+            <button>
+              <p>see transaction</p>
+            </button>
           </div>
           <div className="layer_img">
             {' '}
@@ -38,7 +40,7 @@ const Edge = () => {
               <div>
                 {' '}
                 <h4>520$</h4>
-                <p>intel hd graphics 4000</p>
+                <p>intel hd 4000</p>
               </div>
             </div>
             <div className="machine">
@@ -46,7 +48,7 @@ const Edge = () => {
               <div>
                 {' '}
                 <h4>320$</h4>
-                <p>intel pentium g2020</p>
+                <p>intel g2020</p>
               </div>
             </div>
             <div className="machine">

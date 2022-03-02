@@ -47,12 +47,12 @@
 #available {
   color: white;
 
-  background-color: #5df888;
+  background-color: #219653;
   border-radius: 18px;
 
   text-align: center;
   font-family: Poppins;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
@@ -61,12 +61,12 @@
 #offline {
   color: white;
 
-  background-color: #e73636;
+  background-color: #eb5757;
   border-radius: 18px;
 
   text-align: center;
   font-family: Poppins;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
@@ -75,12 +75,12 @@
 #busy {
   color: white;
 
-  background: linear-gradient(178.18deg, #ffd57b -13.56%, #d0ff01 158.3%);
+  background: #f2c94c;
   border-radius: 18px;
 
   text-align: center;
   font-family: Poppins;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 18px;

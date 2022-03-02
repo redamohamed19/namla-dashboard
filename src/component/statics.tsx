@@ -1,5 +1,6 @@
 import threebuttons from '../imgs/3buttons.svg';
 import {
+  ResponsiveContainer,
   AreaChart,
   Area,
   XAxis,
@@ -24,44 +25,47 @@ const Statics = () => {
           <img src={threebuttons} alt="plus" />
         </button>
       </div>
-
-      <AreaChart
-        width={1300}
-        height={400}
-        data={t}
-        margin={{
-          top: 10,
-          right: 30,
-          left: 0,
-          bottom: 0
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis />
-        <YAxis />
-        <Tooltip />
-        <Area
-          type="monotone"
-          dataKey="uv"
-          stackId="1"
-          stroke="#8884d8"
-          fill="#8884d8"
-        />
-        <Area
-          type="monotone"
-          dataKey="pv"
-          stackId="1"
-          stroke="#82ca9d"
-          fill="#82ca9d"
-        />
-        <Area
-          type="monotone"
-          dataKey="amt"
-          stackId="1"
-          stroke="#ffc658"
-          fill="#ffc658"
-        />
-      </AreaChart>
+      <div style={{ width: '90%', height: 300 }}>
+        <ResponsiveContainer>
+          <AreaChart
+            width={900}
+            height={400}
+            data={t}
+            margin={{
+              top: 10,
+              right: 30,
+              left: 0,
+              bottom: 0
+            }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis />
+            <YAxis />
+            <Tooltip />
+            <Area
+              type="monotone"
+              dataKey="uv"
+              stackId="1"
+              stroke="#8884d8"
+              fill="#8884d8"
+            />
+            <Area
+              type="monotone"
+              dataKey="pv"
+              stackId="1"
+              stroke="#82ca9d"
+              fill="#82ca9d"
+            />
+            <Area
+              type="monotone"
+              dataKey="amt"
+              stackId="1"
+              stroke="#ffc658"
+              fill="#ffc658"
+            />
+          </AreaChart>
+        </ResponsiveContainer>
+      </div>
     </div>
   );
 };
