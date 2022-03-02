@@ -9,6 +9,11 @@ const Tterminal = () => {
   let [counter, Setcounter] = useState<number>(0);
 
   useEffect(() => {
+
+    init();
+    
+  }, []);// eslint-disable-line react-hooks/exhaustive-deps
+
       function init() {
     //initialise terminal with selected text
     // default settings
@@ -17,11 +22,6 @@ const Tterminal = () => {
     terminal.innerText = '[guest@namla.cloud:]$ ';
     terminalStart();
   }
-    init();
-    return
-  }, []);
-
-
 
   function terminalStart() {
     terminalWrite(
