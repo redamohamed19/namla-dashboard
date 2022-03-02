@@ -10,6 +10,7 @@ const Tterminal = () => {
 
   useEffect(() => {
     init();
+    return
   }, []);
 
   function init() {
