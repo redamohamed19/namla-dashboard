@@ -9,10 +9,12 @@ const Tterminal = () => {
   let [counter, Setcounter] = useState<number>(0);
 
   useEffect(() => {
-    init();
-  }, []);
 
-  function init() {
+    init();
+    
+  }, []);// eslint-disable-line react-hooks/exhaustive-deps
+
+      function init() {
     //initialise terminal with selected text
     // default settings
     terminal = terminalRef.current;

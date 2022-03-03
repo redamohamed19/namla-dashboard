@@ -42,6 +42,7 @@ nav {
 }
 
 .notifications {
+  cursor: pointer;
   position: relative;
   grid-column: 7/8;
   justify-self: end;
@@ -151,6 +152,9 @@ nav {
   border-radius: 0px 90px 90px 0px;
   background: linear-gradient(178.18deg, #4edbe5 -13.56%, #281ac8 158.3%);
 }
+.active a img {
+  fill: white;
+}
 .active span {
   color: white;
 }
@@ -173,6 +177,7 @@ nav {
 }
 .active_notif {
   position: absolute;
+  background: white;
   top: 100%;
   right: 0;
   display: flex;
